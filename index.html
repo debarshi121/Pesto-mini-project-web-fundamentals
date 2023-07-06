@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Open AI Image Generator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav id="top-nav">
+			<span id="site-title">AI Quote Generator</span>
+		</nav>
+		<main>
+			<section id="section-input">
+				<h1>Quote Generator using API Ninjas API</h1>
+				<p>AI quote generator lets you quickly turn your topic into some incredible quotes.</p>
+				<input type="text" id="input-keyword" name="keywords" placeholder="Type here..." />
+				<button id="btn">Generate</button>
+			</section>
+
+			<section id="section-output">
+				<div class="quote-card">
+					<p>I think that Indy is special to me. The greater the distance between the last time I drove an Indy car and the next time, I wouldn't like that to be too big.</p>
+					<cite>- Danica Patrick</cite>
+				</div>
+
+				<div class="quote-card">
+					<p>You know, it's amazing. I don't even have a car, would you believe it? I had a motorbike and it got stolen last year. So I've got to buy another one of those, I suppose. I can treat myself to that.</p>
+					<cite>- Michael Fassbender</cite>
+				</div>
+
+				<div class="quote-card">
+					<p>Buyers decide in the first eight seconds of seeing a home if they're interested in buying it. Get out of your car, walk in their shoes and see what they see within the first eight seconds.</p>
+					<cite>- Barbara Corcoran</cite>
+				</div>
+
+				<div class="quote-card">
+					<p>The racing driver's mind has to have the ability to have amazing anticipation, coordination, and reflex. Because of the speed the car goes.</p>
+					<cite>- Emerson Fittipaldi</cite>
+				</div>
+
+				<div class="quote-card">
+					<p>But now I feel off the grid. I feel that I am not part of the culture. And because I don't have a car I don't really go anywhere to buy things. In fact, I have been in a slow process of selling and giving away everything I own.</p>
+					<cite>- Vincent Kartheiser</cite>
+				</div>
+
+				<div class="quote-card">
+					<p>I've always had an inquisitive mind about everything from flowers to television sets to motor cars. Always pulled them apart - couldn't put 'em back, but always extremely interested in how things work.</p>
+					<cite>- Craig Johnston</cite>
+				</div>
+			</section>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/openai@3.3.0/dist/index.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
