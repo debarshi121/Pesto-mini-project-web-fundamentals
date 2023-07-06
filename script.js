@@ -26,7 +26,7 @@ const generateQuotes = async (category) => {
 			quotesDivs += div;
 		});
 
-		console.log(quotesDivs)
+		console.log(quotesDivs);
 
 		document.getElementById("section-output").innerHTML = quotesDivs;
 	} catch (error) {
@@ -36,9 +36,7 @@ const generateQuotes = async (category) => {
 
 document.getElementById("btn").addEventListener("click", () => {
 	const keyword = document.getElementById("input-keyword").value;
-	if(keyword.trim() !== ""){
+	if (keyword.trim() !== "") {
 		generateQuotes(keyword);
 	}
-})
-
-
+});

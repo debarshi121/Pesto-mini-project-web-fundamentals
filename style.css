@@ -70,9 +70,6 @@ h1 {
     color: #4b5563;
 }
 
-
-
-
 #section-input button {
     padding: 15px 30px;
     border-radius: 0;
@@ -88,7 +85,6 @@ h1 {
     background-color: #ef4444;
 }
 
-
 #section-output {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -96,6 +92,9 @@ h1 {
 }
 
 .quote-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #ffffff;
     padding: 16px;
     border-radius: 5px;
@@ -107,11 +106,12 @@ h1 {
     word-spacing: 3px;
     font-size: 22px;
     color: #475569;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .quote-card cite {
     color: #4b5563;
+    text-align: center;
 }
 
 /* Responsive styles */
@@ -119,15 +119,18 @@ h1 {
     h1 {
         font-size: 20px;
     }
+
     section {
         width: 90%;
     }
+
     #input-keyword {
         width: 80%;
         height: 40px;
         padding: 0px 10px 0px 10px;
         font-size: 16px;
     }
+
     #section-input button {
         padding: 10px 15px;
         border-radius: 0;
@@ -138,6 +141,7 @@ h1 {
         font-size: 16px;
         cursor: pointer;
     }
+
     #section-output {
         grid-template-columns: auto;
     }
