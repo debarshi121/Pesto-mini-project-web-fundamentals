@@ -26,8 +26,6 @@ const generateQuotes = async (category) => {
 			quotesDivs += div;
 		});
 
-		console.log(quotesDivs);
-
 		document.getElementById("section-output").innerHTML = quotesDivs;
 	} catch (error) {
 		console.error(error);
