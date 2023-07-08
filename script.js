@@ -1,5 +1,17 @@
 const cache = {};
 
+const button = document.getElementById("btn");
+
+button.addEventListener("click", () => {
+	document.getElementById("section-output").innerHTML = "";
+	document.getElementById("section-error").innerHTML = "";
+	const keyword = document.getElementById("input-keyword").value;
+	if (keyword.trim() !== "") {
+		button.disabled = true;
+		generateQuotes(keyword);
+	}
+});
+
 const generateQuotes = async (category) => {
 	const URL = `https://api.api-ninjas.com/v1/quotes?category=${category}&limit=6`;
 	const apiKey = "f1ORreJfh0vN6PwU3Z/Z9A==ANRNhsauUzT4zyXw";
@@ -42,13 +54,5 @@ const generateQuotes = async (category) => {
 	} else {
 		document.getElementById("section-error").innerHTML = "<p>No quotes found. Please try different keywords!</p>";
 	}
+	button.disabled = false;
 };
-
-document.getElementById("btn").addEventListener("click", () => {
-	document.getElementById("section-output").innerHTML = "";
-	document.getElementById("section-error").innerHTML = "";
-	const keyword = document.getElementById("input-keyword").value;
-	if (keyword.trim() !== "") {
-		generateQuotes(keyword);
-	}
-});
